@@ -1,0 +1,35 @@
+.companyDbContainer {
+  .titleLineContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .mainTitle {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .operationBtn {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
+}
+
+.modalContainer {
+  max-height: 400px;
+  height: 400px;
+  overflow-y: scroll;
+
+  .arco-form-label-item {
+    margin-bottom: 4px;
+    margin-left: 4px;
+  }
+
+  .arco-form-item {
+    margin-bottom: 8px;
+  }
+}
