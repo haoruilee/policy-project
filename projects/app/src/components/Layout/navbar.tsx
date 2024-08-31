@@ -53,6 +53,13 @@ const Navbar = ({ unread }: { unread: number }) => {
         activeIcon: 'support/user/userFill',
         link: '/account',
         activeLink: ['/account']
+      },
+      {
+        label: '企业数据库',
+        icon: 'support/user/userLight',
+        activeIcon: 'support/user/userFill',
+        link: '/companydb',
+        activeLink: ['/companydb']
       }
     ],
     [lastChatAppId, lastChatId, t]
