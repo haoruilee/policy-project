@@ -272,7 +272,6 @@ const CompanyDB = () => {
   const onCreateBtnClick = () => {
     setMode('create');
     // 清除 form 内容
-    formRef?.current?.resetFields();
     setModalVisible(true);
   };
 
@@ -308,7 +307,6 @@ const CompanyDB = () => {
           Message.success('创建公司信息成功!');
           refreshTableInfo();
           setModalVisible(false);
-          formRef?.current?.resetFields();
         })
         .catch((err) => {
           Message.error('请求失败');
@@ -323,7 +321,6 @@ const CompanyDB = () => {
           Message.success('修改公司信息成功!');
           refreshTableInfo();
           setModalVisible(false);
-          formRef?.current?.resetFields();
         })
         .catch((err) => {
           console.error('update error', err);

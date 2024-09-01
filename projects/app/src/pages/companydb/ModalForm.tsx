@@ -32,7 +32,6 @@ const ModalForm = (props: IProps) => {
   const { mode, visible, setVisible, formRef, onOk, okLoading } = props;
 
   const onCancel = () => {
-    formRef?.current?.resetFields();
     setVisible(false);
   };
 
@@ -52,6 +51,7 @@ const ModalForm = (props: IProps) => {
         disabled: okLoading
       }}
       cancelText={modeTextConfig[mode].cancel}
+      unmountOnExit
     >
       <div className={style.modalContainer}>
         <Form layout="vertical" size="small" ref={formRef}>
