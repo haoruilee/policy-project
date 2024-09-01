@@ -7,6 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useUserStore } from '@/web/support/user/useUserStore';
 import { getUnreadCount } from '@/web/support/user/inform/api';
 import dynamic from 'next/dynamic';
+import '@arco-design/web-react/dist/css/arco.css';
 
 import Auth from './auth';
 import { useSystem } from '@fastgpt/web/hooks/useSystem';
