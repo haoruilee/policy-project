@@ -57,7 +57,7 @@ export const updateCompany = async (companyData: CompanyItemData) => {
 // 删除公司
 export const deleteCompanyRequest = async (companyData: CompanyItemData) => {
   const body = {
-    companyName: companyData?.name
+    uniqCode: companyData?.uniqCode
   };
   const res = await fetch('http://111.43.78.224:3009/delete_company_by_uniq_code', {
     body: JSON.stringify(body),
