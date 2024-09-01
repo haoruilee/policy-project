@@ -61,7 +61,7 @@ export const deleteCompanyRequest = async (companyData: CompanyItemData) => {
   };
   const res = await fetch('http://111.43.78.224:3009/delete_company_by_uniq_code', {
     body: JSON.stringify(body),
-    method: 'DELETE',
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     }
