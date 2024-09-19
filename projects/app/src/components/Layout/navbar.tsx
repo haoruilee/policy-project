@@ -55,7 +55,8 @@ const Navbar = ({ unread }: { unread: number }) => {
         activeLink: ['/dataset/list', '/dataset/detail']
       },
       {
-        label: t('navbar.Account'),
+        // label: t('navbar.Account'),
+        label: 'test account',
         icon: 'support/user/userLight',
         activeIcon: 'support/user/userFill',
         link: '/account',

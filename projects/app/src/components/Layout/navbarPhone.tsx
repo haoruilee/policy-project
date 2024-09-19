@@ -43,6 +43,14 @@ const NavbarPhone = ({ unread }: { unread: number }) => {
         link: '/account',
         activeLink: ['/account'],
         unread
+      },
+      {
+        label: '企业数据库',
+        icon: 'support/user/userLight',
+        activeIcon: 'support/user/userFill',
+        link: '/companydb',
+        activeLink: ['/companydb'],
+        unread
       }
     ],
     [t, lastChatAppId, lastChatId, unread]
