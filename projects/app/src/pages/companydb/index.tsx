@@ -3,7 +3,6 @@ import { Button, FormInstance, Input, Message, Modal, Spin, Table } from '@arco-
 import { IconPlus, IconSearch } from '@arco-design/web-react/icon';
 import { ColumnProps } from '@arco-design/web-react/es/Table';
 
-import AppListContextProvider from '../app/list/components/context';
 import PageContainer from '@/components/PageContainer';
 import style from './style.module.scss';
 import ModalForm from './ModalForm';
@@ -401,14 +400,6 @@ const CompanyDB = () => {
   );
 };
 
-const ContextRender = () => {
-  return (
-    <AppListContextProvider>
-      <CompanyDB />
-    </AppListContextProvider>
-  );
-};
-
 export async function getServerSideProps(content: any) {
   return {
     props: {
@@ -417,4 +408,4 @@ export async function getServerSideProps(content: any) {
   };
 }
 
-export default ContextRender;
+export default CompanyDB;
