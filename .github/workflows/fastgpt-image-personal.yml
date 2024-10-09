@@ -39,10 +39,10 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -f ./projects/app/Dockerfile \
-          -t registry.cn-beijing.aliyuncs.com/closeai/policygpt:v2local \
+          -t registry.cn-beijing.aliyuncs.com/closeai/policygpt:v5local \
           --build-arg name=app \
           --build-arg proxy=taobao \
           .
       - name: Push Docker Image to Alibaba Cloud Registry
         run: |
-          docker push registry.cn-beijing.aliyuncs.com/closeai/policygpt:v2local
+          docker push registry.cn-beijing.aliyuncs.com/closeai/policygpt:v5local

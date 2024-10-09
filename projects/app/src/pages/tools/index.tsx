@@ -25,30 +25,30 @@ const Tools = () => {
     },
     ...(feConfigs?.show_git
       ? [
-          {
-            icon: 'common/gitLight',
-            label: 'GitHub 地址',
-            link: 'https://github.com/labring/FastGPT'
-          }
-        ]
+        {
+          icon: 'common/gitLight',
+          label: 'GitHub 地址',
+          link: 'https://blank'
+        }
+      ]
       : []),
     ...(feConfigs?.docUrl
       ? [
-          {
-            icon: 'common/courseLight',
-            label: '使用文档',
-            link: getDocPath('/docs/intro')
-          }
-        ]
+        {
+          icon: 'common/courseLight',
+          label: '使用文档',
+          link: getDocPath('/docs/intro')
+        }
+      ]
       : []),
     ...(feConfigs?.show_pay
       ? [
-          {
-            icon: 'support/bill/priceLight',
-            label: '计费说明',
-            link: '/price'
-          }
-        ]
+        {
+          icon: 'support/bill/priceLight',
+          label: '计费说明',
+          link: '/price'
+        }
+      ]
       : [])
   ];
 

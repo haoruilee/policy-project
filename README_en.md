@@ -24,7 +24,7 @@ FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive 
   <a href="https://doc.fastgpt.in/docs/development">
     <img height="21" src="https://img.shields.io/badge/Local Development-%23d4eaf7?style=flat-square&logo=xcode&logoColor=7d09f1" alt="development">
   </a>
-  <a href="https://github.com/labring/FastGPT/blob/main/LICENSE">
+  <a href="https://blank/blob/main/LICENSE">
     <img height="21" src="https://img.shields.io/badge/License-Apache--2.0-ffffff?style=flat-square&labelColor=d4eaf7&color=7d09f1" alt="license">
   </a>
 </p>
@@ -35,7 +35,7 @@ FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive 
   
 </div>
 
-https://github.com/labring/FastGPT/assets/15308462/7d3a38df-eb0e-4388-9250-2409bd33f6d4
+https://blank/assets/15308462/7d3a38df-eb0e-4388-9250-2409bd33f6d4
 
 ## 🛸 Use Cloud Services
 
@@ -124,7 +124,7 @@ Project tech stack: NextJs + TS + ChakraUI + Mongo + Postgres (Vector plugin)
 
 + 🌐 Visit the [FastGPT website](https://fastgpt.in/) for full documentation and useful links.
 + 💬 Join our [Discord server](https://discord.gg/mp68xkZn2Q) is to chat with FastGPT developers and other FastGPT users. This is a good place to learn about FastGPT, ask questions, and share your experiences.
-+ 🐞 Create [GitHub Issues](https://github.com/labring/FastGPT/issues/new/choose) for bug reports and feature requests.
++ 🐞 Create [GitHub Issues](https://blank/issues/new/choose) for bug reports and feature requests.
 
 <a href="#readme">
     <img src="https://img.shields.io/badge/-Back_to_Top-7d09f1.svg" alt="#" align="right">
@@ -162,7 +162,7 @@ Project tech stack: NextJs + TS + ChakraUI + Mongo + Postgres (Vector plugin)
 
 ## 🌟 Star History
 
-<a href="https://github.com/labring/FastGPT/stargazers" target="_blank" style="display: block" align="center">
+<a href="https://blank/stargazers" target="_blank" style="display: block" align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=labring/FastGPT&type=Date&theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=labring/FastGPT&type=Date" />

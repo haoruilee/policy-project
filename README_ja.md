@@ -27,12 +27,12 @@ FastGPT は、LLM 上 に 構築 された 知識 ベースの Q&A システム�
   <a href="/#-%E7%9B%B8%E5%85%B3%E9%A1%B9%E7%9B%AE">
     <img height="21" src="https://img.shields.io/badge/相关项目-7d09f1?style=flat-square" alt="project">
   </a>
-  <a href="https://github.com/labring/FastGPT/blob/main/LICENSE">
+  <a href="https://blank/blob/main/LICENSE">
     <img height="21" src="https://img.shields.io/badge/License-Apache--2.0-ffffff?style=flat-square&labelColor=d4eaf7&color=7d09f1" alt="license">
   </a>
 </p>
 
-https://github.com/labring/FastGPT/assets/15308462/7d3a38df-eb0e-4388-9250-2409bd33f6d4
+https://blank/assets/15308462/7d3a38df-eb0e-4388-9250-2409bd33f6d4
 
 ## 🛸 クラウドサービスの 利用
 

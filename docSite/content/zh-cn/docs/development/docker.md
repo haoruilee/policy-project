@@ -113,8 +113,8 @@ brew install orbstack
 
 非 Linux 环境或无法访问外网环境，可手动创建一个目录，并下载配置文件和对应版本的`docker-compose.yml`
 
-- [config.json](https://github.com/labring/FastGPT/blob/main/projects/app/data/config.json)
-- [docker-compose.yml](https://github.com/labring/FastGPT/blob/main/files/docker) (注意，不同向量库版本的文件不一样)
+- [config.json](https://blank/blob/main/projects/app/data/config.json)
+- [docker-compose.yml](https://blank/blob/main/files/docker) (注意，不同向量库版本的文件不一样)
 
 {{% alert icon="🤖" context="success" %}}
 

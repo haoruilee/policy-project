@@ -56,7 +56,7 @@ const Navbar = ({ unread }: { unread: number }) => {
       },
       {
         // label: t('navbar.Account'),
-        label: 'test account',
+        label: t('navbar.Account'),
         icon: 'support/user/userLight',
         activeIcon: 'support/user/userFill',
         link: '/account',
@@ -126,22 +126,22 @@ const Navbar = ({ unread }: { unread: number }) => {
             {...itemStyles}
             {...(item.activeLink.includes(router.pathname)
               ? {
-                  color: 'primary.600',
-                  bg: 'white',
-                  boxShadow:
-                    '0px 0px 1px 0px rgba(19, 51, 107, 0.08), 0px 4px 4px 0px rgba(19, 51, 107, 0.05)'
-                }
+                color: 'primary.600',
+                bg: 'white',
+                boxShadow:
+                  '0px 0px 1px 0px rgba(19, 51, 107, 0.08), 0px 4px 4px 0px rgba(19, 51, 107, 0.05)'
+              }
               : {
-                  color: 'myGray.500',
-                  bg: 'transparent',
-                  _hover: {
-                    bg: 'rgba(255,255,255,0.9)'
-                  }
-                })}
+                color: 'myGray.500',
+                bg: 'transparent',
+                _hover: {
+                  bg: 'rgba(255,255,255,0.9)'
+                }
+              })}
             {...(item.link !== router.asPath
               ? {
-                  onClick: () => router.push(item.link)
-                }
+                onClick: () => router.push(item.link)
+              }
               : {})}
           >
             <MyIcon
@@ -195,7 +195,7 @@ const Navbar = ({ unread }: { unread: number }) => {
         <MyTooltip label={`Git Star: ${gitStar}`} placement={'right-end'}>
           <Link
             as={NextLink}
-            href="https://github.com/labring/FastGPT"
+            href="https://blank"
             target={'_blank'}
             {...itemStyles}
             {...hoverStyle}

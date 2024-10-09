@@ -29,7 +29,7 @@ weight: 705
 
 ### 1. Fork 存储库
 
-您需要 Fork [存储库](https://github.com/labring/FastGPT)。
+您需要 Fork [存储库](https://blank)。
 
 ### 2. 克隆存储库
 
@@ -105,11 +105,11 @@ make build name=app image=registry.cn-hangzhou.aliyuncs.com/fastgpt/fastgpt:v4.8
 
 ## 提交代码至开源仓库
 
-1. 确保你的代码是 Fork [FastGPT](https://github.com/labring/FastGPT) 仓库
+1. 确保你的代码是 Fork [FastGPT](https://blank) 仓库
 2. 尽可能少量的提交代码，每次提交仅解决一个问题。
 3. 向 FastGPT 的 main 分支提交一个 PR，提交请求后，FastGPT 团队/社区的其他人将与您一起审查它。
 
-如果遇到问题，比如合并冲突或不知道如何打开拉取请求，请查看 GitHub 的[拉取请求教程](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)，了解如何解决合并冲突和其他问题。一旦您的 PR 被合并，您将自豪地被列为[贡献者表](https://github.com/labring/FastGPT/graphs/contributors)中的一员。
+如果遇到问题，比如合并冲突或不知道如何打开拉取请求，请查看 GitHub 的[拉取请求教程](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)，了解如何解决合并冲突和其他问题。一旦您的 PR 被合并，您将自豪地被列为[贡献者表](https://blank/graphs/contributors)中的一员。
 
 
 ## QA

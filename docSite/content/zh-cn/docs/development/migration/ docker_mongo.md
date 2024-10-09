@@ -10,7 +10,7 @@ weight: 762
 
 [https://github.com/samqin123](https://github.com/samqin123)
 
-[相关PR。有问题可打开这里与作者交流](https://github.com/labring/FastGPT/pull/1426)
+[相关PR。有问题可打开这里与作者交流](https://blank/pull/1426)
 
 ## 介绍
 
@@ -122,7 +122,7 @@ tar -xvzf fastgptbackup-2024-05-03.tar.gz -C user/fastgpt/mongobackup/data
 ``` 
 解压缩后里面是bson文件，这里可以检查下，压缩文件数量是否一致。如果不一致，后续启动新环境的fastgpt容器，也不会有任何数据。
 ​
-<img width="1561" alt="image" src="https://github.com/labring/FastGPT/assets/103937568/cbb8a93c-5834-4a0d-be6c-c45c701f593e">
+<img width="1561" alt="image" src="https://blank/assets/103937568/cbb8a93c-5834-4a0d-be6c-c45c701f593e">
 
 
 如果没问题，准备进入下一步，将压缩包文件上传到B环境，也就是新fastgpt环境里的指定目录，比如/fastgpt/mongobackup, 注意不要放到fastgpt/data目录下，因为下面会先清空一次这个目录，否则导入会报错。
@@ -165,7 +165,7 @@ rm -rf *
 ``` 
 docker exec -it mongo mongorestore -u "username" -p "password" --authenticationDatabase admin /tmp/backup/ --db fastgpt
 ``` 
-<img width="1668" alt="image" src="https://github.com/labring/FastGPT/assets/103937568/32c2cdb8-bf80-4d31-9269-4bf3909cf04e">
+<img width="1668" alt="image" src="https://blank/assets/103937568/32c2cdb8-bf80-4d31-9269-4bf3909cf04e">
 注意：导入文件数量量级太少，大概率是没导入成功的表现。如果导入不成功，新环境fastgpt可以登入，但是一片空白。
 
 
@@ -176,11 +176,11 @@ docker logs -f mongo  **强烈建议先检查mongo运行情况，在去做登陆
 ``` 
 
 如果mongo启动正常，显示的是类似这样的，而不是 “mongo is restarting”，后者就是错误
-<img width="1736" alt="iShot_2024-05-09_19 21 26" src="https://github.com/labring/FastGPT/assets/103937568/94ee00db-43de-48bd-a1fc-22dfe86aaa90">
+<img width="1736" alt="iShot_2024-05-09_19 21 26" src="https://blank/assets/103937568/94ee00db-43de-48bd-a1fc-22dfe86aaa90">
 
 报错情况
-<img width="508" alt="iShot_2024-05-09_19 23 13" src="https://github.com/labring/FastGPT/assets/103937568/2e2afc9f-484c-4b63-93ee-1c14aef03de0">
+<img width="508" alt="iShot_2024-05-09_19 23 13" src="https://blank/assets/103937568/2e2afc9f-484c-4b63-93ee-1c14aef03de0">
 
 
 6. 启动fastgpt容器服务后，登陆新fastgpt web，能看到原来的数据库内容完整显示，说明已经导入系统了。
-<img width="1728" alt="iShot_2024-05-09_19 23 51" src="https://github.com/labring/FastGPT/assets/103937568/846b6157-6b6a-4468-a1d9-c44d681ebf7c">
+<img width="1728" alt="iShot_2024-05-09_19 23 51" src="https://blank/assets/103937568/846b6157-6b6a-4468-a1d9-c44d681ebf7c">
