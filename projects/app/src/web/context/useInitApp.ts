@@ -21,7 +21,7 @@ export const useInitApp = () => {
       feConfigs: { scripts, isPlus, show_git, systemTitle }
     } = await clientInitData();
 
-    setTitle(systemTitle || 'SuiZhengTong');
+    setTitle(systemTitle || '绥政通');
 
     // log fastgpt
     if (!isPlus) {

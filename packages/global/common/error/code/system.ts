@@ -7,7 +7,7 @@ export enum SystemErrEnum {
 const systemErr = [
   {
     statusText: SystemErrEnum.communityVersionNumLimit,
-    message: '超出开源版数量限制，请升级商业版: https://fastgpt.in'
+    message: '超出数量限制'
   }
 ];
 export default systemErr.reduce((acc, cur, index) => {

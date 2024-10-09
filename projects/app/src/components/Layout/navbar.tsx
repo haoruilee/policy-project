@@ -63,7 +63,7 @@ const Navbar = ({ unread }: { unread: number }) => {
         activeLink: ['/account']
       },
       {
-        label: '企业数据库',
+        label: '数据库',
         icon: 'support/user/userLight',
         activeIcon: 'support/user/userFill',
         link: '/companydb',
@@ -192,7 +192,7 @@ const Navbar = ({ unread }: { unread: number }) => {
         </MyTooltip>
       )}
       {feConfigs?.show_git && (
-        <MyTooltip label={`Git Star: ${gitStar}`} placement={'right-end'}>
+        <MyTooltip label={``} placement={'right-end'}>
           <Link
             as={NextLink}
             href="https://blank"

@@ -45,7 +45,7 @@ const NavbarPhone = ({ unread }: { unread: number }) => {
         unread
       },
       {
-        label: '企业数据库',
+        label: '数据库',
         icon: 'support/user/userLight',
         activeIcon: 'support/user/userFill',
         link: '/companydb',
@@ -80,11 +80,11 @@ const NavbarPhone = ({ unread }: { unread: number }) => {
             transform={'scale(0.9)'}
             {...(item.activeLink.includes(router.pathname)
               ? {
-                  color: 'primary.600'
-                }
+                color: 'primary.600'
+              }
               : {
-                  color: 'myGray.500'
-                })}
+                color: 'myGray.500'
+              })}
             onClick={() => {
               if (item.link === router.asPath) return;
               router.push(item.link);

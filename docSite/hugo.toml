@@ -1,4 +1,4 @@
-baseURL = "https://doc.fastgpt.in"
+baseURL = "https://blank"
 languageCode = "en-GB"
 contentDir = "content"
 enableEmoji = true
@@ -7,7 +7,7 @@ enableGitInfo = false # N.B. .GitInfo does not currently function with git submo
 defaultContentLanguage = 'zh-cn'
 [languages]
   [languages.zh-cn]
-    title = "SuiZhengTong"
+    title = "绥政通"
     languageName = "简体中文"
     contentDir = "content/zh-cn"
     weight = 10
@@ -112,7 +112,7 @@ defaultContentLanguage = 'zh-cn'
         # Link behaviour
         intLinkTooltip  = true                                # Enable a tooltip for internal links that displays info about the destination? default false
         # extLinkNewTab   = false                             # Open external links in a new Tab? default true
-        logoLinkURL = "https://fastgpt.in/"                                    # Set a custom URL destination for the top header logo link.
+        logoLinkURL = "https://blank"                                    # Set a custom URL destination for the top header logo link.
 
     [params.flexsearch] # Parameters for FlexSearch
         # enabled             = true
@@ -157,9 +157,9 @@ defaultContentLanguage = 'zh-cn'
         # ]
 
     [params.umamiAnalytics]
-      websiteid = "69b3f2c6-39a5-4937-b92d-6fdd5c8f5958"
-      domain = "umami.fastgpt.in"
-      scriptName = "fastgpt"
+      websiteid = ""
+      domain = ""
+      scriptName = ""
 
 [menu]
 [[menu.primary]]
