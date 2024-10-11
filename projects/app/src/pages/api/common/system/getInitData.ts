@@ -40,7 +40,7 @@ const defaultFeConfigs: FastGPTFeConfigsType = {
   show_git: false,
   docUrl: 'https://blank',
   openAPIDocUrl: 'https://blank',
-  systemTitle: '绥政通',
+  systemTitle: '绥心策',
   concatMd:
     ' ',
   limit: {

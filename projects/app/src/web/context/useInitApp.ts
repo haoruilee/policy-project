@@ -21,12 +21,12 @@ export const useInitApp = () => {
       feConfigs: { scripts, isPlus, show_git, systemTitle }
     } = await clientInitData();
 
-    setTitle(systemTitle || '绥政通');
+    setTitle(systemTitle || '绥心策');
 
     // log fastgpt
     if (!isPlus) {
       console.log(
-        '%cWelcome to SuiZhengTong',
+        '%cWelcome to SuiXinCe',
         'font-family:Arial; color:#3370ff ; font-size:18px; font-weight:bold;',
         `GitHub：https://github.com/labring/FastGPT`
       );
