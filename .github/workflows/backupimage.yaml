@@ -28,8 +28,9 @@ jobs:
       - name: Retag Image for Personal Hub
         run: |
           IMAGE=${{ github.event.inputs.image_name }}
-          # Prepend the Alibaba registry and your username to the original image name.
-          TARGET_IMAGE=registry.cn-beijing.aliyuncs.com/henceforth1974/$IMAGE
+          # Extract the last part of the image name (i.e., the repository name with tag)
+          BASENAME=$(echo $IMAGE | awk -F'/' '{print $NF}')
+          TARGET_IMAGE=registry.cn-beijing.aliyuncs.com/closeai/$BASENAME
           echo "Retagging image '$IMAGE' as '$TARGET_IMAGE'"
           docker tag $IMAGE $TARGET_IMAGE
           echo "TARGET_IMAGE=$TARGET_IMAGE" >> $GITHUB_ENV
