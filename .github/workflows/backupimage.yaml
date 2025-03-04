@@ -1,0 +1,39 @@
+name: Clone and Push Docker Image to Personal Hub
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_name:
+        description: 'Docker image name to clone (e.g., lss233/kirara-agent-framework:latest)'
+        required: true
+        default: 'lss233/kirara-agent-framework:latest'
+
+jobs:
+  clone-and-push:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Login to Alibaba Cloud Docker Registry
+        run: |
+          docker login registry.cn-beijing.aliyuncs.com -u henceforth1974 -p xiaoDA11
+
+      - name: Pull Docker Image from Docker Hub
+        run: |
+          IMAGE=${{ github.event.inputs.image_name }}
+          echo "Pulling image: $IMAGE"
+          docker pull $IMAGE
+
+      - name: Retag Image for Personal Hub
+        run: |
+          IMAGE=${{ github.event.inputs.image_name }}
+          # Prepend the Alibaba registry and your username to the original image name.
+          TARGET_IMAGE=registry.cn-beijing.aliyuncs.com/henceforth1974/$IMAGE
+          echo "Retagging image '$IMAGE' as '$TARGET_IMAGE'"
+          docker tag $IMAGE $TARGET_IMAGE
+          echo "TARGET_IMAGE=$TARGET_IMAGE" >> $GITHUB_ENV
+
+      - name: Push Docker Image to Personal Hub
+        run: |
+          docker push $TARGET_IMAGE
