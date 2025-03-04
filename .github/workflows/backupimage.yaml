@@ -10,7 +10,7 @@ on:
 
 jobs:
   clone-and-push:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -28,8 +28,8 @@ jobs:
       - name: Retag Image for Personal Hub
         run: |
           IMAGE=${{ github.event.inputs.image_name }}
-          # Prepend the Alibaba registry and the closeai namespace to the original image name.
-          TARGET_IMAGE=registry.cn-beijing.aliyuncs.com/closeai/$IMAGE
+          # Prepend the Alibaba registry and your username to the original image name.
+          TARGET_IMAGE=registry.cn-beijing.aliyuncs.com/henceforth1974/$IMAGE
           echo "Retagging image '$IMAGE' as '$TARGET_IMAGE'"
           docker tag $IMAGE $TARGET_IMAGE
           echo "TARGET_IMAGE=$TARGET_IMAGE" >> $GITHUB_ENV
