@@ -17,7 +17,7 @@ jobs:
 
       - name: Login to Alibaba Cloud Docker Registry
         run: |
-          docker login registry.cn-beijing.aliyuncs.com -u closeai -p <YOUR_PASSWORD_HERE>
+          docker login registry.cn-beijing.aliyuncs.com -u closeai -p xiaoDA11
 
       - name: Pull Docker Image from Docker Hub
         run: |
